@@ -283,7 +283,7 @@ impl<T: Data> WindowDesc<T> {
 
         builder.set_window_state(self.state);
 
-        builder.set_title(self.title.display_text());
+        builder.set_title(self.title.display_text().to_string());
         if let Some(menu) = platform_menu {
             builder.set_menu(menu);
         }

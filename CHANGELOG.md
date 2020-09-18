@@ -34,7 +34,7 @@ You can find its changes [documented below](#060---2020-06-01).
 - `TextLayout` type simplifies drawing text ([#1182] by [@cmyr])
 - Implementation of `Data` trait for `i128` and `u128` primitive data types. ([#1214] by [@koutoftimer])
 - `LineBreaking` enum allows configuration of label line-breaking ([#1195] by [@cmyr])
-- `TextAlignment` support in `TextLayout` and `Label` ([#1210] by [@cmyr])`
+- `TextAlignment` support in `TextLayout` and `Label` ([#1210] by [@cmyr])
 - `UpdateCtx` gets `env_changed` and `env_key_changed` methods ([#1207] by [@cmyr])
 - `Button::from_label` to construct a `Button` with a provided `Label`. ([#1226] by [@ForLoveOfCats])
 - Lens: Added Unit lens for type erased / display only widgets that do not need data. ([#1232] by [@rjwittams])
@@ -58,6 +58,7 @@ You can find its changes [documented below](#060---2020-06-01).
 - `Movement::RightOfLine` to `Movement::NextLineBreak`, and `Movement::LeftOfLine` to `Movement::PrecedingLineBreak`. ([#1092] by [@sysint64])
 - `AnimFrame` was moved from `lifecycle` to `event` ([#1155] by [@jneem])
 - Contexts' `text()` methods return `&mut PietText` instead of cloning ([#1205] by [@cmyr])
+- `LocalizedString` and `LabelText` use `ArcStr` instead of String ([#1245] by [@cmyr])
 
 ### Deprecated
 
@@ -459,6 +460,7 @@ Last release without a changelog :(
 [#1231]: https://github.com/linebender/druid/pull/1231
 [#1220]: https://github.com/linebender/druid/pull/1220
 [#1238]: https://github.com/linebender/druid/pull/1238
+[#1245]: https://github.com/linebender/druid/pull/1245
 
 [Unreleased]: https://github.com/linebender/druid/compare/v0.6.0...master
 [0.6.0]: https://github.com/linebender/druid/compare/v0.5.0...v0.6.0
